@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing Platform</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #d4e4ff, #d3c9f5, #ffcce0);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+            color: #333;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1, h2, h3 {
+            margin: 0;
+            color: #4b4f83;
+        }
+
+        a, button {
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            background: #6c5ce7;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        a:hover, button:hover {
+            background: #5a49d6;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            color: #666;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            display: inline-block;
+            font-size: 1.8rem;
+            color: #4b4f83;
+        }
+
+        nav ul {
+            display: inline-block;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            font-size: 0.9rem;
+            padding: 8px 16px;
+            color: #6c5ce7;
+            border: 2px solid #6c5ce7;
+            border-radius: 20px;
+            background: transparent;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background: #6c5ce7;
+            color: white;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>MarketingPro</h1>
+        <nav>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section>
+        <h2>Level Up Your Marketing Game</h2>
+        <p>Discover the power of data-driven decisions. Transform your business with cutting-edge tools for growth.</p>
+        <button>Get Started</button>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <h2>Our Features</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>Analytics Dashboard</h3>
+                <p>Track your performance with real-time data and insights.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Email Campaigns</h3>
+                <p>Create and execute impactful campaigns effortlessly.</p>
+            </div>
+            <div class="feature-card">
+                <h3>SEO Optimization</h3>
+                <p>Rank higher with advanced search engine optimization tools.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We help businesses thrive by delivering powerful tools and strategies that drive measurable results.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <form>
+            <input type="text" placeholder="Your Name" style="padding: 10px; margin: 10px; width: 300px;"><br>
+            <input type="email" placeholder="Your Email" style="padding: 10px; margin: 10px; width: 300px;"><br>
+            <textarea placeholder="Your Message" style="padding: 10px; margin: 10px; width: 300px; height: 100px;"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 MarketingPro. All rights reserved.</p>
+    </footer>
+</body>
+</html>
